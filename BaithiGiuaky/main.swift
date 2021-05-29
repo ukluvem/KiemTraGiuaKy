@@ -107,7 +107,11 @@ func miniGame() {
         miniGame()
     } else if nhap == random {
         print("Chúc mừng bạn đã giành chiến thắng \(nhap) = \(random)")
+    } else if nhap > random {
+        print("Số lớn quá!!!")
+        miniGame()
     } else {
+        print("Số bé quá!!!")
         miniGame()
     }
 }
